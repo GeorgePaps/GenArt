@@ -5,7 +5,7 @@ const URL = [
 
 let COLS;
 let BGCOL;
-let num_circles = 150;
+let num_circles = 50;
 
 function setup() {
   createCanvas(800, 800);
@@ -15,15 +15,19 @@ function setup() {
   COLS.shift();
   frameRate(10);
   for (let i = 0; i < num_circles; i++) {
-    fill(random(COLS));
+    let col = color(random(COLS));
+    col.setAlpha(200);
+    fill(col);
     // stroke(random(COLS));
     // strokeWeight(2);
     noStroke();
     let center_X = random(width);
     let center_Y = random(height);
-    let diam = random(width / 50, width / 5);
+    let diam = random(width / 50, width / 3);
     ellipse(center_X, center_Y, diam, diam);
   }
+
+  saveCanvas('thin', 'jpg');
 }
 
 function draw() {
