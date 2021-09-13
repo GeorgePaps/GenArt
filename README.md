@@ -14,3 +14,10 @@ parameters follow.
 ![First Image](/Aut2020/Week1/thick.jpg)
 
 ![First Image](/Aut2020/Week1/thin.jpg)
+
+### Week 2 - 03/09/2021 - 19/09/2021
+
+One frame of the generative piece of week 2 with different
+parameters follow.
+
+![Third Image](/Aut2020/Week2/thin.jpg)
