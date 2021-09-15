@@ -1,11 +1,11 @@
 const URL = [
-  "https://coolors.co/2e4632-af5b5b-7284a8-e07a5f-fcd0a1",
+  // "https://coolors.co/2e4632-af5b5b-7284a8-e07a5f-fcd0a1",
   "https://coolors.co/f4f1de-e07a5f-3d405b-81b29a-f2cc8f"
 ];
 
 let COLS;
 let BGCOL;
-let num_circles = 50;
+let num_circles = 250;
 
 function setup() {
   createCanvas(800, 800);
@@ -23,11 +23,14 @@ function setup() {
     noStroke();
     let center_X = random(width);
     let center_Y = random(height);
-    let diam = random(width / 50, width / 3);
+    let diam = random(width / 50, width / 5);
     ellipse(center_X, center_Y, diam, diam);
   }
 
-  saveCanvas('thin', 'jpg');
+  // saveCanvas('thin', 'jpg');
+
+
+
 }
 
 function draw() {
