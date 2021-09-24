@@ -26,8 +26,8 @@ parameters follow.
 
 3 Frames from the generative algorithm developed in the third week of the Autumn project.
 
-![Fourth Image](/Aut2020/Week3/Sketch1.png)
+![Fourth Image](/Images/Week3/Sketch1.png)
 
-![Fifth Image](/Aut2020/Week3/Sketch2.png)
+![Fifth Image](/Images/Week3/Sketch2.png)
 
-![Sixth Image](/Aut2020/Week3/Sketch3.png)
+![Sixth Image](/Images/Week3/Sketch3.png)
