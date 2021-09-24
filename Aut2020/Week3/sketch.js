@@ -1,43 +1,48 @@
 
-let width = 1400;
-let height = 400;
+// Parameters that might be relaxed
+let numLines = 1000;
+let amp = 400; // total amplitude of line
+let noise_x_factor = 1000; // how smooth the noise will be 
+let noise_y_factor = 50; // how smooth the noise will be 
+let lineWeight = 1;
+
+let width = 1500;
+let height = 600;
 let border = 40;
 let xStart = border;
 let xEnd = width - border;
-let yStart = height / 2;
 let yEnd = height / 2;
-let lineTotWeight = 1.25;
 let stepLine = 1;
-let numLines = 100;
-let numRedLines = 3;
 
-let BGCOL = color("#EFE7C3");
-let LineCols = ["#604532", "#D1CDC1"];
+// let BGCOL = color("#EFE7C3"); // Lemon Meringue (beige)
+let BGCOL = color("#EFE7C3"); // Lemon Meringue (beige)
+// Van Dyke Brown "#604532", Timberwolf (gray) "#D1CDC1"
+// Space Cadet (Blue) "#262E41"
+// Orange Yellow Crayola "#E9C46A"
+// MSU Green "#2A4536"
+let LineCols = ["#2A4536", "#E19E43"];
 
 function setup() {
   createCanvas(width, height);
   background(BGCOL);
 
-  strokeWeight(lineTotWeight);
-  // strokeCap(SQUARE);
+  strokeWeight(lineWeight);
+
   let i = 0;
   for (i; i < numLines; i++) {
     let lastX = -999;
     let lastY = -999;
-    let y = yStart;
+    let y = height / 2 - amp / 2 + noise(xStart / noise_x_factor, i / noise_y_factor) * amp;
     let x = xStart;
-    let LineCol = color(random(LineCols));
+
     let LineAlpha = random(50, 100);
-    // let LineAlpha = 150;
+    let LineCol = color(random(LineCols));
     LineCol.setAlpha(LineAlpha);
     stroke(LineCol);
+
     for (x; x <= xEnd; x += stepLine) {
       if (lastX > -999) {
-        // y = height / 2 - 50 + random(100);
-        y = height / 2 - 100 + noise(x / 100, i) * 200;
-        if (x == xEnd) {
-          y = height / 2;
-        }
+        y = height / 2 - amp / 2 + noise(x / noise_x_factor, i / noise_y_factor) * amp;
         line(x, y, lastX, lastY);
       }
       lastX = x;
@@ -45,29 +50,11 @@ function setup() {
     }
   }
 
-  //   strokeWeight(5);
-  //   let i_red = 0;
-  //   for (i; i < numRedLines; i++) {
-  //     let lastX_red = -999;
-  //     let lastY_red = -999;
-  //     let y_red = yStart;
-  //     let x_red = xStart;
-  //     let LineCol_red = color("#723D46");
-  //     let LineAlpha_red = 200;
-  //     LineCol.setAlpha(LineAlpha_red);
-  //     stroke(LineCol_red);
-  //     for (x_red; x_red <= xEnd; x_red += stepLine) {
-  //       if (lastX > -999) {
-  //         // y = height / 2 - 50 + random(100);
-  //         y_red = height / 2 - 100 + noise(x_red / 100, i_red) * 200;
-  //         if (x_red == xEnd) {
-  //           y_red = height / 2;
-  //         }
-  //         line(x_red, y_red, lastX_red, lastY_red);
-  //       }
-  //       lastX_red = x_red;
-  //       lastY_red = y_red;
+
+  // saveCanvas();
+
 }
+
 //   }
 // }
 
