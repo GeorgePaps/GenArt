@@ -22,7 +22,7 @@ parameters follow.
 
 ![Third Image](/Aut2020/Week2/thin.jpg)
 
-### Week 3 - 13/09/2021 - 19/09/2021
+### Week 3 - 20/09/2021 - 26/09/2021
 
 3 Frames from the generative algorithm developed in the third week of the Autumn project.
 
