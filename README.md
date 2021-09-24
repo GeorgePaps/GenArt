@@ -4,7 +4,7 @@ A repository where I explore generative art ideas.
 
 ## Autumn Project
 
-In the Autumn project I will be creating a piece every week of autumn starting at 06/09/2021. This project has mostly learning purposes. 
+In the Autumn project I will be creating a piece every week of autumn starting at 06/09/2021. This project has mostly learning purposes. The for the projects after week 3 is not publicly available.
 
 ### First Piece Week 1 - 06/09/2021 - 12/09/2021
 
