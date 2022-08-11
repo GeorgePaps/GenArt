@@ -4,16 +4,16 @@
 Two frames of the generative piece of week 1 with different
 parameters follow.
 
-![First Image](/Aut2020/Week1/thick.jpg)
+![First Image](/Aut2021/Week1/thick.jpg)
 
-![Second Image](/Aut2020/Week1/thin.jpg)
+![Second Image](/Aut2021/Week1/thin.jpg)
 
 ## Week 2 - 13/09/2021 - 19/09/2021
 
 One frame of the generative piece of week 2 with different
 parameters follow.
 
-![Third Image](/Aut2020/Week2/thin.jpg)
+![Third Image](/Aut2021/Week2/thin.jpg)
 
 ## Week 3 - 20/09/2021 - 26/09/2021
 
@@ -29,4 +29,4 @@ parameters follow.
 
 An instance of the projects created for week for is presented in the following figure.
 
-![Sixth Image](/Aut2020/Week4/Frame1.png)
+![Sixth Image](/Aut2021/Week4/Frame1.png)
