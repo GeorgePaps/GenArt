@@ -1,0 +1,4 @@
+
+Here I will store my favorite colors. 
+
+[72, 74, 71]
