@@ -29,6 +29,4 @@ function setup() {
   
   // saveCanvas('NoiseRandom.png', 'png'); 
 
-  
-
 }

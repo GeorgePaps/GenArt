@@ -28,8 +28,6 @@ function setup() {
   rect(margin, height - margin, width - margin, margin);
   rect(0, margin, margin, height - margin);
   
-  // saveCanvas('NoisePerlin.png', 'png'); 
-  
-  img = loadImage('NoisePerlin.png')
+  // saveCanvas('PerlinNoise.png', 'png'); 
 
 }
