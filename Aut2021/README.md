@@ -10,8 +10,7 @@ parameters follow.
 
 ## Week 2 - 13/09/2021 - 19/09/2021
 
-One frame of the generative piece of week 2 with different
-parameters follow.
+One frame of the generative piece of week 2 follows.
 
 ![Third Image](/Aut2021/Week2/thin.jpg)
 
@@ -29,4 +28,4 @@ parameters follow.
 
 An instance of the projects created for week for is presented in the following figure.
 
-![Sixth Image](/Aut2021/Week4/Frame1.png)
+![Seventh Image](/Aut2021/Week4/Frame1.png)
