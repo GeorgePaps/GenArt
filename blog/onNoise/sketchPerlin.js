@@ -1,7 +1,10 @@
-let width = 400;
-let height = 200;
+let width = 800;
+let height = 400;
 let margin = 2;
-let img;
+let freq = 1;
+let rectSize = 2;
+let step = 2;
+
 
 let col_back = [255, 255, 255 ];
 
@@ -10,21 +13,23 @@ function setup() {
   background(col_back);
 
   
-  rectMode(CENTER)
-  for (let i = 2; i < width; i+=1) {
-    for (let j = 2; j < height; j+=1){
+  rectMode(CENTER);
+  for (let i = margin + step / 2; i < width; i += step) {
+    for (let j = margin + step / 2; j < height; j += step) {
       noStroke();
-      fill(255*noise(i/20,j/20));
-      rect(i, j,  1, 1);  
+      x = i / width;
+      y = j / height;
+      fill(255 * noise(freq * x, freq * y));
+      rect(i, j, rectSize, rectSize);
     }
   }
-  
+
   // Draw the margins
-  
+
   fill(255);
   rectMode("corner");
-  rect(0, 0, width-margin, margin);
-  rect(width-margin, 0, margin, height-margin);
+  rect(0, 0, width - margin, margin);
+  rect(width - margin, 0, margin, height - margin);
   rect(margin, height - margin, width - margin, margin);
   rect(0, margin, margin, height - margin);
   
