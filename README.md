@@ -1,6 +1,6 @@
 # GenArt
 
-A repository where I explore generative art ideas.
+A repository where I explore creative coding. 
 
 ![Second Image](/Aut2021/Week1/thin.jpg)
 
@@ -8,10 +8,6 @@ A repository where I explore generative art ideas.
 
 In the [Autumn 2021](Aut2021/README.md) I started experimenting with creative
 coding ideas. Some of the projects I created are in the Aut2021 folder. 
-
-## Blog
-
-The blog folder contains work from some blog posts I am currently working on or I have worked on in the past. 
 
 ## Books
 
