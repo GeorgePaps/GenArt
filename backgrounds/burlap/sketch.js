@@ -4,11 +4,11 @@ let margin = 60;
 
 // parameters for combing
 let combWidth = 2;
-let combHeight = 12;
+let combHeight = 18;
 let combVarR = 10;
 let combVarG = 10;
 let combVarB = 10;
-let combVarA = 10;
+let combVarA = 80;
 
 function setup() {
 
