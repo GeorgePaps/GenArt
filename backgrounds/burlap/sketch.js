@@ -1,24 +1,26 @@
 
-let col_back = [244, 241, 222]; // Eggshell
+let col_back = [255, 235, 223]; // Eggshell
 let margin = 60;
 
 // parameters for combing
 let combWidth = 2;
 let combHeight = 12;
-let combVarR = 25;
-let combVarG = 25;
-let combVarB = 25;
-let combVarA = 20;
+let combVarR = 10;
+let combVarG = 10;
+let combVarB = 10;
+let combVarA = 10;
 
 function setup() {
 
   pixelDensity(1);
 
   createCanvas(1400, 1000);
-  background(254, 251, 244);
+  background(255, 255, 244);
   fill(col_back);
   noStroke();
   rect(margin, margin, width - 2*margin, height - 2*margin);
+  fill(215,124,105);
+  rect(margin*2, margin*2, width - 4*margin, height - 4*margin);
 
   // create canvas
   loadPixels();
@@ -42,6 +44,8 @@ function setup() {
   }
   updatePixels();
 }
+
+
 
 
 
